@@ -33,7 +33,7 @@ function Intro() {
             <Image
               width="192"
               height="192"
-              src="/vikash.png"
+              src="/Vikash.png"
               alt="Vikash"
               quality={95}
               priority={true}
