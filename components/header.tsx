@@ -2,10 +2,10 @@
 import { motion } from "framer-motion";
 import { links } from "@/lib/data";
 import Link from "next/link";
-import { useState } from "react";
 import { clsx } from "clsx";
+import { useActiveSectionContext } from "@/context/active-section.context";
 function Header() {
-  const [activeSection, setActiveSection] = useState("Home");
+  const { activeSection, setActiveSection,setTimeOfLastClicked } = useActiveSectionContext();
 
   return (
     <header className="z-[999] relative">
@@ -29,7 +29,10 @@ function Header() {
               animate={{ y: 0, opacity: 1 }}
             >
               <Link
-                onClick={() => setActiveSection(link.name)}
+                onClick={() => {
+                  setActiveSection(link.name),
+                  setTimeOfLastClicked(Date.now())
+                }}
                 className={clsx(
                   "flex w-full items-center justify-center px-3 py-3 hover:text-gray-950",
                   {

@@ -1,4 +1,5 @@
-import React, { ReactNode, createContext, useState } from "react";
+"use client";
+import React, { ReactNode, createContext, useContext, useState } from "react";
 import { links } from "@/lib/data";
 
 /**
@@ -14,11 +15,13 @@ type ActiveSectionContextProviderProps = {
 type ActiveSectionContextType = {
   activeSection: SectionName;
   setActiveSection: React.Dispatch<React.SetStateAction<SectionName>>;
+  timeOfLastClicked: number;
+  setTimeOfLastClicked: React.Dispatch<React.SetStateAction<number>>;
 };
 /**
- * Section Name 
+ * Section Name
  */
-type SectionName = (typeof links)[number]["name"];
+export type SectionName = (typeof links)[number]["name"];
 /**
  * ActiveSectionContext
  */
@@ -30,10 +33,21 @@ export default function ActiveSectionContextProvider({
   children,
 }: ActiveSectionContextProviderProps) {
   const [activeSection, setActiveSection] = useState<SectionName>("Home");
+  const [timeOfLastClicked, setTimeOfLastClicked] = useState(0);
 
   return (
-    <ActiveSectionContext.Provider value={{ activeSection, setActiveSection }}>
+    <ActiveSectionContext.Provider
+      value={{ activeSection, setActiveSection, timeOfLastClicked, setTimeOfLastClicked }}
+    >
       {children}
     </ActiveSectionContext.Provider>
   );
+}
+
+export function useActiveSectionContext() {
+  const context = useContext(ActiveSectionContext);
+  if (!context) {
+    throw "useActiveSectionContext must be used within an ActiveSectionContextProvider";
+  }
+  return context;
 }

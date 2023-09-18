@@ -1,11 +1,17 @@
 "use client";
 
+import useSectionInView from "@/lib/hooks";
 import { motion } from "framer-motion";
 import SectionHeading from "./section-heading";
 
 export default function About() {
+  const { ref } = useSectionInView({
+    sectionName: "About",
+    threshold: 0.75,
+  });
   return (
     <motion.section
+      ref={ref}
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{
@@ -26,9 +32,9 @@ export default function About() {
         <span className="underline italic"> CoinDCX,</span> India's largest and
         safest cryptocurrency exchange platform. Here, I am responsible for
         developing modules, features, and user interfaces for various products
-        and services offered by the company. I
-        also collaborate with cross-functional teams to ensure the quality,
-        performance, and scalability of web applications.
+        and services offered by the company. I also collaborate with
+        cross-functional teams to ensure the quality, performance, and
+        scalability of web applications.
       </p>
       <p className="mb-3">
         Beyond front-end coding chops, I’m also passionate about writing and
