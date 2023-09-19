@@ -14,7 +14,7 @@ import { useThemeContext } from "@/context/theme.context";
 export default function Experience() {
   const { ref } = useSectionInView({
     sectionName: "Experience",
-    threshold: 0.75,
+    threshold: 0.5,
   });
   const { theme } = useThemeContext();
   return (
