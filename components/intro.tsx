@@ -60,10 +60,10 @@ function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello I&apos;m Vikash.</span> I&apos;m{" "}
-        <span className="font-bold">Frontend developer</span> based out of
+        <span className="font-bold">Hello, I&apos;m Vikash.</span> I&apos;m{" "}
+        <span className="font-bold"> a front-end developer</span> based out of
         India. With <span className="font-bold">6+ years</span> Years
-        of Experience Engaged in designing, architecting and developing highly
+        of Experience designing, architecting and developing highly
         responsive, multilingual SEO friendly Web, Mobile, and Hybrid
         Application.
       </motion.h1>
