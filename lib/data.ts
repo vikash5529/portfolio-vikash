@@ -1,6 +1,6 @@
 import React from "react";
+import { BsPersonWorkspace } from "react-icons/bs";
 import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 
 export const links = [
@@ -39,7 +39,7 @@ export const experiencesData = [
     title: "Software Developer at Mphasis",
     location: "Chennai, India",
     description: "I worked as a front-end developer for 2 years.",
-    icon: React.createElement(CgWorkAlt),
+    icon: React.createElement(BsPersonWorkspace),
     date: "2017 - 2018",
   },
   {
@@ -47,7 +47,7 @@ export const experiencesData = [
     location: "Pune, India",
     description:
       "I worked as a full-stack developer for 1.5 years. My stack included Angular, React.js, Vue.js, RoR, GoLang TypeScript",
-    icon: React.createElement(FaReact),
+    icon: React.createElement(BsPersonWorkspace),
     date: "2018 - 2020",
   },
   {
@@ -55,7 +55,7 @@ export const experiencesData = [
     location: "Pune, India",
     description:
       "I worked as a Frontend developer for 1.6 years. My stack included Angular, React.js, TypeScript",
-    icon: React.createElement(FaReact),
+    icon: React.createElement(BsPersonWorkspace),
     date: "2020 - 2021",
   },
   {
@@ -63,7 +63,7 @@ export const experiencesData = [
     location: "Noida, India",
     description:
       "I'm now working as a Senior Software Engineer. My stack includes Angular React, Next.js, TypeScript.  I'm open to new opportunities.",
-    icon: React.createElement(FaReact),
+    icon: React.createElement(BsPersonWorkspace),
     date: "2021 - present",
   },
 ] as const;
