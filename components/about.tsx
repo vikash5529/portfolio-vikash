@@ -21,8 +21,8 @@ export default function About() {
       id="about"
     >
       <SectionHeading>About Me</SectionHeading>
-      <p className="mb-3">
-        I have a Bachelor of Technology degree in Computer Science from the
+      <p className="mb-4 px-2">
+        I have a Bachelor of Technology degree in CSE from the
         <span className="font-bold">
           {" "}
           National Institute of Technology, Puducherry
@@ -36,7 +36,7 @@ export default function About() {
         cross-functional teams to ensure the quality, performance, and
         scalability of web applications.
       </p>
-      <p className="mb-3">
+      <p className="mb-4 px-2">
         Beyond front-end coding chops, I&apos;m also passionate about writing and
         sharing what I&apos;ve learned both with my teammates and the broader web
         community. I value the ability to not only perform web development work

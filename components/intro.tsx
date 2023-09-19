@@ -4,9 +4,9 @@ import {useSectionInView} from "@/lib/hooks";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { BsArrowRight, BsLinkedin } from "react-icons/bs";
+import { BsArrowRight, BsEye, BsEyeFill, BsLinkedin } from "react-icons/bs";
 import { FaGithubSquare, FaMedium, FaStackOverflow } from "react-icons/fa";
-import { HiDownload } from "react-icons/hi";
+import { HiDownload, HiViewGrid } from "react-icons/hi";
 function Intro() {
   const { ref } = useSectionInView({
     sectionName: "Home",
@@ -69,7 +69,7 @@ function Intro() {
         Application.
       </motion.h1>
       <motion.div
-        className="flex flex-col sm:flex-row items-center justify-center gap-4 px-4 text-lg font-medium"
+        className="flex flex-col flex-wrap sm:flex-row items-center justify-center gap-4 px-4 text-lg font-medium"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
@@ -94,11 +94,11 @@ function Intro() {
           active:scale-105 transition cursor-pointer border border-black/10
           dark:bg-white/10
           "
-          href="/CV.pdf"
-          download
+          href="/Vikash_Singh_Resume.pdf"
+          target="_blank"
         >
-          Download Resume
-          <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
+          View Resume
+          <BsEyeFill className="opacity-60 group-hover:scale-105 transition" />
         </a>
         <a
           className="bg-white p-4 text-gray-700  flex items-center gap-2 rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15]
