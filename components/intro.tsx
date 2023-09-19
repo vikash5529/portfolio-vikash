@@ -1,12 +1,11 @@
 "use client";
 import { useActiveSectionContext } from "@/context/active-section.context";
-import {useSectionInView} from "@/lib/hooks";
+import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { BsArrowRight, BsEye, BsEyeFill, BsLinkedin } from "react-icons/bs";
+import { BsArrowRight, BsEyeFill, BsLinkedin } from "react-icons/bs";
 import { FaGithubSquare, FaMedium, FaStackOverflow } from "react-icons/fa";
-import { HiDownload, HiViewGrid } from "react-icons/hi";
 function Intro() {
   const { ref } = useSectionInView({
     sectionName: "Home",
@@ -63,7 +62,7 @@ function Intro() {
       >
         <span className="font-bold">Hello I&apos;m Vikash.</span> I&apos;m{" "}
         <span className="font-bold">Frontend developer</span> based out of
-        Bangalore, India. With <span className="font-bold">6+ years</span> Years
+        Noida, India. With <span className="font-bold">6+ years</span> Years
         of Experience Engaged in designing, architecting and developing highly
         responsive, multilingual SEO friendly Web, Mobile, and Hybrid
         Application.
