@@ -28,27 +28,12 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduation NIT,Puducherry",
-    location: "Puducherry, India",
+    title: "Senior Software Engineer at CoinDCX",
+    location: "Bengaluru, India",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2013-2017",
-  },
-  {
-    title: "Software Developer at Mphasis",
-    location: "Chennai, India",
-    description: "I worked as a front-end developer for 2 years.",
+      "I'm now working as a Senior Software Engineer. My stack includes Angular React, Next.js, TypeScript.  I'm open to new opportunities.",
     icon: React.createElement(BsPersonWorkspace),
-    date: "2017 - 2018",
-  },
-  {
-    title: "Consultant at TechVerito Softwares",
-    location: "Pune, India",
-    description:
-      "I worked as a full-stack developer for 1.5 years. My stack included Angular, React.js, Vue.js, RoR, GoLang TypeScript",
-    icon: React.createElement(BsPersonWorkspace),
-    date: "2018 - 2020",
+    date: "2021 - present",
   },
   {
     title: "Software Developer at Acquia",
@@ -59,12 +44,27 @@ export const experiencesData = [
     date: "2020 - 2021",
   },
   {
-    title: "Senior Software Engineer at CoinDCX",
-    location: "Noida, India",
+    title: "Consultant at TechVerito Softwares",
+    location: "Pune, India",
     description:
-      "I'm now working as a Senior Software Engineer. My stack includes Angular React, Next.js, TypeScript.  I'm open to new opportunities.",
+      "I worked as a full-stack developer for 1.5 years. My stack included Angular, React.js, Vue.js, RoR, GoLang TypeScript",
     icon: React.createElement(BsPersonWorkspace),
-    date: "2021 - present",
+    date: "2018 - 2020",
+  },
+  {
+    title: "Software Developer at Mphasis",
+    location: "Chennai, India",
+    description: "I worked as a front-end developer for 2 years.",
+    icon: React.createElement(BsPersonWorkspace),
+    date: "2017 - 2018",
+  },
+  {
+    title: "Graduation NIT,Puducherry",
+    location: "Puducherry, India",
+    description:
+      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+    icon: React.createElement(LuGraduationCap),
+    date: "2013-2017",
   },
 ] as const;
 

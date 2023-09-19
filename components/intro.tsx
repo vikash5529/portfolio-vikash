@@ -62,7 +62,7 @@ function Intro() {
       >
         <span className="font-bold">Hello I&apos;m Vikash.</span> I&apos;m{" "}
         <span className="font-bold">Frontend developer</span> based out of
-        Noida, India. With <span className="font-bold">6+ years</span> Years
+        India. With <span className="font-bold">6+ years</span> Years
         of Experience Engaged in designing, architecting and developing highly
         responsive, multilingual SEO friendly Web, Mobile, and Hybrid
         Application.
@@ -99,6 +99,7 @@ function Intro() {
           View Resume
           <BsEyeFill className="opacity-60 group-hover:scale-105 transition" />
         </a>
+        <div className="flex gap-2">
         <a
           className="bg-white p-4 text-gray-700  flex items-center gap-2 rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15]
           hover:text-gray-950
@@ -134,6 +135,7 @@ function Intro() {
         >
           <FaMedium />
         </a>
+        </div>
       </motion.div>
     </section>
   );
